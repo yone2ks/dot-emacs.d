@@ -11,4 +11,5 @@
 (bind-key* "C-x C-k" 'kill-buffer)
 (bind-key* "C-x f" 'find-file)
 (bind-key* "C-'" 'other-window)
-(bind-key* "C-h" 'backward-delete-char)
+;;(bind-key* "C-h" 'backward-delete-char)
+(keyboard-translate ?\C-h ?\C-?)
