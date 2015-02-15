@@ -65,3 +65,4 @@
 (depends-on "ruby-electric")
 (depends-on "ruby-end")
 (depends-on "go-autocomplete")
+(depends-on "flycheck-pos-tip")
