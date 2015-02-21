@@ -6,6 +6,6 @@
 (require 'helm-ag)
 ; agのデフォルトのコマンドオプションを指定
 ; -nを消すとサブディレクトリも再帰的に検索します
-(setq helm-ag-base-command "pt --nocolor --nogroup -n")
+(setq helm-ag-base-command "ag --nocolor --nogroup -n")
 ;Alt+sでag実行
 (bind-key* "M-s" 'helm-ag)

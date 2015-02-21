@@ -4,6 +4,9 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+;; markdown-mode起動時はskkカナモードで
+(add-hook 'markdown-mode-hook
+	  (lambda () (skk-mode t) (skk-latin-mode t)))
 
 ;; 見た目の設定
 (defface markdown-header-delimiter-face-1
