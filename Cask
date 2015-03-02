@@ -48,6 +48,7 @@
 (depends-on "helm-migemo")
 (depends-on "helm-c-yasnippet")
 (depends-on "helm-ag")
+(depends-on "git")
 ;; for programming
 (depends-on "coffee-mode")
 (depends-on "go-mode")
