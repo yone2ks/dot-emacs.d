@@ -51,9 +51,12 @@
 
 (defun gollum--save-commit-wiki-page ()
   (interactive)
-  (f-write-text (buffer-string) 'utf-8-unix (concat gollum--wiki-directory (buffer-name)))
-  (git-add (buffer-name))
-  (git-commit (gollum--select-commit-message) (buffer-name)))
+  (let ((commit-message (gollum--select-commit-message)) (buffer-name (buffer-name)))
+    (f-write-text (buffer-string) 'utf-8-unix (concat gollum--wiki-directory buffer-name))
+    (write-file  (concat gollum--wiki-directory buffer-name))
+    (git-add buffer-name)
+    (git-commit commit-message buffer-name)
+    (message (concat "commit -m" commit-message))))
 
 (defun gollum--search ()
   (interactive)

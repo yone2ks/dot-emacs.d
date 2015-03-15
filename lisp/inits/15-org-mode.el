@@ -50,12 +50,14 @@
   (setq ov1 (ov-regexp-line org-heading-regexp))
   (ov-set ov1 'face '(:background "tan")))
 (defun org-header-unhighligh ()
-  (if ov1
-      (ov-clear 'ov1)))
-(add-hook 'pre-command-hook 'org-header-highlight)
-(add-hook 'post-command-hook 'org-header-highlight)
+  (interactive)
+  (ov-clear))
+(add-hook 'org-mode-hook 'org-header-highlight)
 
-;; org-mode起動時はskkカナモードで
+;; org-mode起動時はskkカナモードで, show-all
 (add-hook 'org-mode-hook
-	  (lambda () (skk-mode t) (skk-latin-mode t)))
+	  (lambda ()
+	    (skk-mode t)
+	    (skk-latin-mode t)
+	    (show-all)))
 
