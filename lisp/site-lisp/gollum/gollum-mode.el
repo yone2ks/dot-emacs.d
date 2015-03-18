@@ -56,7 +56,7 @@
     (write-file  (concat gollum--wiki-directory buffer-name))
     (git-add buffer-name)
     (git-commit commit-message buffer-name)
-    (message (concat "commit -m" commit-message))))
+    (message (concat "commit -m " commit-message))))
 
 (defun gollum--search ()
   (interactive)
