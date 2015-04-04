@@ -6,6 +6,8 @@
 (bind-key* "C-x j" 'skk-mode)
 (bind-key* "C-x t" 'skk-tutorial)
 (setq skk-large-jisyo "~/.emacs.d/lisp/site-lisp/skk-dict/SKK-JISYO.L")
+(setq skk-extra-jisyo-file-list
+      (list '("~/.emacs.d/lisp/site-lisp/skk-dict/SKK-JISYO.hira-kata")))
 (setq skk-cdb-large-jisyo "~/.emacs.d/lisp/site-lisp/skk-dict/SKK-JISYO.L.cdb")
 (setq skk-japanese-message-and-error t)
 (setq skk-auto-insert-paren t)
