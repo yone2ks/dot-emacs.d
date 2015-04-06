@@ -61,3 +61,15 @@
 	    (skk-latin-mode t)
 	    (show-all)))
 
+;; GTD関連の設定
+(defvar gtd-inbox-file "~/wiki/inbox.org")
+(defvar gtd-projects-file "~/wiki/projects.org")
+(defvar gtd-calender-file "~/wiki/calender.org")
+(defvar gtd-someday-file "~/wiki/someday.org")
+(defvar gtd-2min-todo-file "~/wiki/2min-todo.org")
+(defvar gtd-journal-file "~/wiki/journal.org")
+
+(add-to-list 'org-agenda-files gtd-inbox-file)
+
+
+
