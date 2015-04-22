@@ -65,6 +65,6 @@
 (setq org-directory "~/wiki/org")
 (setq org-agenda-files (list org-directory))
 (bind-key* "C-c a" 'org-agenda)
-(bind-key* "C-c s" 'org-schedule)
+(bind-key* "C-c C-s" 'org-schedule)
 
 
