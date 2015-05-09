@@ -37,3 +37,8 @@
 ;; メニューバーとツールバーを表示しない
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+
+
+(if (string-match "darwin" system-configuration)
+    (progn
+      (set-frame-parameter nil 'alpha 90)))
