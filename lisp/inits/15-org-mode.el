@@ -1,9 +1,9 @@
 ;; 見た目の設定
 (defface org-level-1
   '((((class color) (background light))
-    (:foreground "Black" :weight bold :height 1.5 :color "tan"))
+    (:foreground "Black" :weight bold :height 1.5 :underline t :color "tan"))
     (((class color) (background dark))
-     (:foreground "White" :weight bold :height 1.5 :color "tan")))
+     (:foreground "White" :weight bold :height 1.5 :underline t :color "tan")))
   "Face for level-1 headers")
 
 (defface org-level-2
