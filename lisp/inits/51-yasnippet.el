@@ -22,3 +22,4 @@
       (signal 'quit "user quit!"))))
 (custom-set-variables '(yas/prompt-functions '(my-yas/prompt)))
 (yas-global-mode 1)
+(require 'html5-snippets)
