@@ -20,6 +20,10 @@
      (:foreground "White" :weight bold :height 1.1 :color "tan")))
   "Face for level-3 headers")
 
+;; コードブロックでシンタックスハイライト
+(setq org-src-fontify-natively t)
+
+
 ;; ;; orgヘッダ行全体の背景をカスタマイズ
 ;; (require 'ov)
 ;; (defun lbp-at-specified-point (p)
