@@ -1,4 +1,5 @@
 ;; gollum-modeの設定
+(require 'org)
 (require 'gollum-mode)
 
 ;; キーバインドの設定
