@@ -15,4 +15,5 @@
 	   ("k" . previous-line)
 	   (";" . gene-word)
 	   ("b" . scroll-down)
+	   ("<space>" . scroll-down)
 	   (" " . scroll-up))
