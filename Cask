@@ -50,6 +50,7 @@
 (depends-on "helm-ag")
 (depends-on "git")
 (depends-on "ov")
+(depends-on "viewer")
 ;; for programming
 (depends-on "coffee-mode")
 (depends-on "go-mode")
