@@ -21,5 +21,6 @@
           (nth n choices))
       (signal 'quit "user quit!"))))
 (custom-set-variables '(yas/prompt-functions '(my-yas/prompt)))
+(setq yas/snippet-dirs "~/.emacs.d/lisp/site-lisp/snippets")
 (yas-global-mode 1)
 (require 'html5-snippets)
