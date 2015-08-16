@@ -52,6 +52,7 @@
 (depends-on "ov")
 (depends-on "viewer")
 (depends-on "key-chord")
+(depends-on "ace-jump-mode")
 ;; for programming
 (depends-on "coffee-mode")
 (depends-on "go-mode")
