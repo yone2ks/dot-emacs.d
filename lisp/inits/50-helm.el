@@ -24,3 +24,5 @@
 (setq helm-ag-base-command "ag --nocolor --nogroup -n")
 ;Alt+sでag実行
 (bind-key* "M-s" 'helm-ag)
+(require 'helm-swoop)
+(bind-key* "M-m" 'helm-swoop)
