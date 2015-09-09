@@ -4,4 +4,6 @@
 (bind-keys :map ac-menu-map
 	   ("M-n" 'ac-next)
 	   ("M-p" 'ac-previous))
+(require 'ac-skk)
+(ac-skk-enable)
 
