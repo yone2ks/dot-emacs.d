@@ -54,6 +54,7 @@
 (depends-on "key-chord")
 (depends-on "ace-jump-mode")
 (depends-on "helm-swoop")
+(depends-on "ac-skk")
 ;; for programming
 (depends-on "coffee-mode")
 (depends-on "go-mode")
